@@ -2,7 +2,7 @@ const boxesRef = document.querySelector("div#boxes");
 const boxesCountRef = document.querySelector("#controls > input");
 const renderButtonRef = document.querySelector("[data-action=render]");
 const destroyButtonRef = document.querySelector("[data-action=destroy]");
-let boxesRefArray = [];
+let boxesArray = [];
 
 const width = 30;
 const height = 30;
@@ -24,7 +24,7 @@ function createBoxes(amount) {
     box.style.backgroundColor = randomColor();
     boxesArray.push(box);
   }
-  boxesRef.append(...boxesRefArray);
+  boxesRef.append(...boxesArray);
 }
 
 const renderHandler = () => {
