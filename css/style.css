@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#categories,
+#ingredients,
+#gallery,
+#counter,
+h1,
+#validation-input,
+#text {
+  margin-bottom: 30px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+}
+
+#gallery {
+  display: flex;
+  margin: -10px;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery .item {
+  margin: 10px;
+  flex-basis: calc(100% / 3 - 10px);
+  background-color: #fff;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
